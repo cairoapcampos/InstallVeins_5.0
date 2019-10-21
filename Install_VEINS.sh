@@ -71,17 +71,15 @@ echo "Checando arquivos para a compilação do SUMO: "
 sleep 3
 echo
 cd sumo-1.2.0
-./configure
+mkdir build/cmake-build && cd build/cmake-build
+cmake ../..
 echo 
-echo "Compilnado o SUMO: "
+echo "Compilando e instalando o SUMO: "
 sleep 3
 echo
-make
+make -j8
 echo
-echo "Instalando o SUMO: "
-echo
-sudo make install
-sleep 3
+
 clear
 
 echo
