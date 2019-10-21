@@ -99,26 +99,25 @@ echo
 echo "Baixando arquivo para a instalação: "
 sleep 3
 echo
-wget -c https://ipfs.omnetpp.org/release/5.3/omnetpp-5.3-src-linux.tgz
-wget -c https://ipfs.omnetpp.org/release/5.5.1/omnetpp-5.5.1-src-linux.tgz
+wget -c http://ipfs.omnetpp.org/release/5.5.1/omnetpp-5.5.1-src-linux.tgz
 echo
 echo "Descompactando arquivo baixado: "
 sleep 3
 echo
-tar -xvzf omnetpp-5.3-src-linux.tgz
-rm omnetpp-5.3-src-linux.tgz
+tar -xvzf omnetpp-5.5.1-src-linux.tgz
+rm omnetpp-5.5.1-src-linux.tgz
 echo
 # Variável adicionada temporariamente no Bash para a intalação do OMNET ++
-export PATH=$PATH:$HOME/src/omnetpp-5.3/bin
+export PATH=$PATH:$HOME/src/omnetpp-5.5.1/bin
 # Variável adicionada permanentemente no Bash para iniciar o OMNET ++ ao abrir um novo terminal
 echo " " >> ~/.bashrc
-echo "export PATH=$PATH:$HOME/src/omnetpp-5.3/bin" >> ~/.bashrc
+echo "export PATH=$PATH:$HOME/src/omnetpp-5.5.1/bin" >> ~/.bashrc
 echo "export SUMO_HOME=$HOME/src/sumo/" >> ~/.bashrc
 source ~/.bashrc
 echo "Checando arquivos para a compilação do OMNET ++: "
 sleep 3
 echo
-cd omnetpp-5.3
+cd omnetpp-5.5.1
 ./configure
 echo 
 echo "Compilnado o OMNET ++: "
@@ -147,7 +146,7 @@ mv veins-veins-5.0 veins
 rm veins-5.0.zip
 clear
 
-ln -s /home/veins/src/omnetpp-5.3 omnetpp
+ln -s /home/veins/src/omnetpp-5.5.1 omnetpp
 ln -s /home/veins/src/sumo-1.2.0 sumo
 
 echo "Movendo icone e script de proxy VEINS"
