@@ -16,21 +16,7 @@ echo "############################################################"
 echo "###  Instalando compiladores e bibliotecas necessários   ###"
 echo "############################################################"
 sleep 3
-if [ $version = "16.04" ]
-then
-    echo
-    echo "Você está usando o GNU/Linux Ubuntu 16.04"
-    echo
-    sleep 5
-    sudo add-apt-repository -y ppa:ubuntugis/ppa
-    echo 
-    sudo apt update
-    echo
-    echo "Instalando biblioteca especifica para a versão 16.04: "
-    echo
-    sleep 3
-    sudo apt install -y libgdal1-dev 
-elif [ $version = "18.04" ]
+if [ $version = "18.04" ]
 then
     echo
     echo "Você está usando o GNU/Linux Ubuntu 18.04"
