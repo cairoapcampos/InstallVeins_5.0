@@ -23,11 +23,6 @@ then
     echo 
     sleep 5
     sudo apt update
-    echo
-    echo "Instalando biblioteca especifica para a versão 18.04: "
-    echo
-    sleep 3
-    sudo apt install -y gdal-bin
 else
     echo
     echo "Você está usando um sistema operacional que não foi homologado para a instalação!"
@@ -37,10 +32,10 @@ else
 fi
 
 echo
-echo "Instalando pacotes comuns entre os sistemas homologados: "
+echo "Instalando pacotes para o sistema homologado: "
 echo
 sleep 3
-sudo apt install -y libgdal-dev build-essential gcc g++ bison flex perl tcl-dev tk-dev blt libxml2-dev zlib1g-dev default-jre \
+sudo apt install -y gdal-bin libgdal-dev build-essential gcc g++ bison flex perl tcl-dev tk-dev blt libxml2-dev zlib1g-dev default-jre \
 doxygen graphviz libwebkitgtk-1.0-0 openmpi-bin libopenmpi-dev libpcap-dev autoconf automake libtool libproj-dev \
 libfox-1.6-dev libxerces-c-dev qt4-dev-tools python python3 qt5-default libqt5opengl5-dev default-jre \
 openscenegraph-plugin-osgearth libosgearth-dev
