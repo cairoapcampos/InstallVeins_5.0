@@ -5,7 +5,7 @@
 ### Requisitos
 
 ```
-* GNU/Linux Ubuntu Minimal/Core 16.04 ou 18.04;
+* GNU/Linux Ubuntu Minimal/Core 18.04;
 * 4 GB de RAM;
 * 2 núcleos dedicados de processador se virtualização for utilizada.
 ```
