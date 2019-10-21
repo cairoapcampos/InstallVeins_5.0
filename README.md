@@ -1,4 +1,4 @@
-# InstallVeins_4.7.1
+# InstallVeins_5.0
 
 ## Instruções ![status](https://img.shields.io/readthedocs/pip.svg)
 
@@ -11,9 +11,9 @@
 ```
 ### Versão dos softwares instalados
 
-* SUMO 0.32.0
-* OMNET++ 5.3
-* Veins 4.7.1
+* SUMO 1.2.0
+* OMNeT++ 5.5.1
+* Veins 5.0
 
 ### Execução do Script
 
