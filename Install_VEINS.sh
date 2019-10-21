@@ -78,18 +78,18 @@ echo
 echo "Baixando arquivo para a instalação: "
 sleep 3
 echo
-wget -c https://ufpr.dl.sourceforge.net/project/sumo/sumo/version%200.32.0/sumo-all-0.32.0.tar.gz
+wget -c https://ufpr.dl.sourceforge.net/project/sumo/sumo/version%201.2.0/sumo-all-1.2.0.tar.gz
 echo
 echo "Descompactando arquivo baixado: "
 sleep 3
 echo
-tar -vzxf sumo-all-0.32.0.tar.gz
-rm sumo-all-0.32.0.tar.gz
+tar -vzxf sumo-all-1.2.0.tar.gz
+rm sumo-all-1.2.0.tar.gz
 echo
 echo "Checando arquivos para a compilação do SUMO: "
 sleep 3
 echo
-cd sumo-0.32.0
+cd sumo-1.2.0
 ./configure
 echo 
 echo "Compilnado o SUMO: "
