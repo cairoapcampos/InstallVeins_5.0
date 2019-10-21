@@ -114,6 +114,7 @@ echo "Baixando arquivo para a instalação: "
 sleep 3
 echo
 wget -c https://ipfs.omnetpp.org/release/5.3/omnetpp-5.3-src-linux.tgz
+wget -c https://ipfs.omnetpp.org/release/5.5.1/omnetpp-5.5.1-src-linux.tgz
 echo
 echo "Descompactando arquivo baixado: "
 sleep 3
@@ -153,15 +154,15 @@ echo "######################################"
 echo "###        Download do VEINS       ###"
 echo "######################################"
 echo
-wget -c https://veins.car2x.org/download/veins-4.7.1.zip
+wget -c https://veins.car2x.org/download/veins-5.0.zip
 echo
-unzip veins-4.7.1.zip
-mv veins-veins-4.7.1 veins
-rm veins-4.7.1.zip
+unzip veins-5.0.zip
+mv veins-veins-5.0 veins
+rm veins-5.0.zip
 clear
 
 ln -s /home/veins/src/omnetpp-5.3 omnetpp
-ln -s /home/veins/src/sumo-0.32.0 sumo
+ln -s /home/veins/src/sumo-1.2.0 sumo
 
 echo "Movendo icone e script de proxy VEINS"
 sleep 3
