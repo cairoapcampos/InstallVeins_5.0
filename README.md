@@ -27,11 +27,11 @@
 
 3. Fazer o download do repositório
 
-`$ git clone https://github.com/cairoapcampos/Install_VEINS.git`
+`$ git clone https://github.com/cairoapcampos/InstallVeins_4.7.1.git`
 
 4. Entar no diretório que possui o script de instalação
 
-`$ cd Install_VEINS`
+`$ cd InstallVeins_4.7.1`
 
 5. Dar permissão de execução no script
 
@@ -115,6 +115,3 @@ https://doc.omnetpp.org/omnetpp/InstallGuide.pdf
 https://www.youtube.com/watch?v=yVEthJz9hLc
 
 https://www.saltycrane.com/blog/2007/01/how-to-add-line-numbers-to-editor-in/
-
-
-
