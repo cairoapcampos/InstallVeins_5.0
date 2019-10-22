@@ -70,7 +70,7 @@ echo
 # Variável adicionada temporariamente no Bash para a intalação do SUMO
 export SUMO_HOME="$PWD/sumo-1.2.0"
 # Variável adicionada permanentemente no Bash para utilizar os comandos sumo e sumo-gui
-nano echo " " >> ~/.bashrc
+echo " " >> ~/.bashrc
 echo "export PATH=$PATH:$HOME/src/sumo-1.2.0/bin" >> ~/.bashrc
 echo "export SUMO_HOME=$HOME/src/sumo-1.2.0/" >> ~/.bashrc
 source ~/.bashrc
