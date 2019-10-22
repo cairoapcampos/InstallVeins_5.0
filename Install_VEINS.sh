@@ -77,7 +77,7 @@ source ~/.bashrc
 echo "Checando arquivos para a compilação do SUMO: "
 sleep 3
 echo
-mkdir build/cmake-build && cd build/cmake-build
+mkdir sumo-1.2.0/build/cmake-build && cd sumo-1.2.0/build/cmake-build
 cmake ../..
 echo 
 echo "Compilando e instalando o SUMO: "
