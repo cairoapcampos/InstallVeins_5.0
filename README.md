@@ -35,7 +35,7 @@
 
 5. Dar permissão de execução no script
 
-`$ sudo chmod +x Install_VEINS.sh`
+`$ chmod +x Install_VEINS.sh`
 
 6. Executar o Script
 
