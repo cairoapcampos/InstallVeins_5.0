@@ -67,10 +67,16 @@ echo
 tar -vzxf sumo-all-1.2.0.tar.gz
 rm sumo-all-1.2.0.tar.gz
 echo
+# Variável adicionada temporariamente no Bash para a intalação do SUMO
+export SUMO_HOME="$PWD/sumo-1.2.0"
+# Variável adicionada permanentemente no Bash para utilizar os comandos sumo e sumo-gui
+nano echo " " >> ~/.bashrc
+echo "export PATH=$PATH:$HOME/src/sumo-1.2.0/bin" >> ~/.bashrc
+echo "export SUMO_HOME=$HOME/src/sumo-1.2.0/" >> ~/.bashrc
+source ~/.bashrc
 echo "Checando arquivos para a compilação do SUMO: "
 sleep 3
 echo
-cd sumo-1.2.0
 mkdir build/cmake-build && cd build/cmake-build
 cmake ../..
 echo 
@@ -105,7 +111,6 @@ export PATH=$PATH:$HOME/src/omnetpp-5.5.1/bin
 # Variável adicionada permanentemente no Bash para iniciar o OMNET ++ ao abrir um novo terminal
 echo " " >> ~/.bashrc
 echo "export PATH=$PATH:$HOME/src/omnetpp-5.5.1/bin" >> ~/.bashrc
-echo "export SUMO_HOME=$HOME/src/sumo/" >> ~/.bashrc
 source ~/.bashrc
 echo "Checando arquivos para a compilação do OMNET ++: "
 sleep 3
